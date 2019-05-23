@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Accordion demo page</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+		<link rel="stylesheet" href="./css/accordion.css">
+		<link rel="stylesheet" href="./css/styles.css">
+		<script type="text/javascript" src="./js/accordion.js"></script>
+	</head>
+	
+	<body>
+	
+		<h1>Accordion demo page</h1>
+		<div id="my-accordion"></div>
+		
+		<script type="text/javascript">
+			var options = {
+				container: 'my-accordion',
+				mainTitle: 'Main Accordion Title fsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff', // Optional title headers
+				panels: [{
+					title: 'My profile',
+					subtitle: 'Update your profile information', //Optional subtitle
+					content: '<p>HTML content for this panel</p>,' //HTML to inject as panel content (e.g. a form)
+				},{
+					title: 'Change password',
+					subtitle: 'Change your login password',
+					content: '<p>HTML content for this panel</p>'
+				},
+				//OTHER PANELS HERE...
+				]
+			};
+			var accordion = new Accordion(options);
+		</script>
+	
+	</body>
+</html>
