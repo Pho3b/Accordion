@@ -12,28 +12,17 @@
   margin: 1px;
   white-space: nowrap;
   overflow: hidden;
+  font-weight: 400;
 }
 
 .accordion {
-  min-height: 50px;
-  max-height: 70px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
-  height: 60px;
   cursor: pointer;
+  overflow: auto;
 }
 .accordion:hover {
   background-color: rgba(217, 217, 217, 0.1);
-}
-.accordion p {
-  font-family: Arial, Verdana;
-  font-size: 14px;
-  color: #0465ac;
-  padding-left: 25px;
-  padding-top: 20px;
-  margin: 1px;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .accordion .open {
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
@@ -42,6 +31,46 @@
   float: right;
   margin: 0px 25px 0px 25px;
   color: #0465ac;
+}
+
+.accordion_title {
+  font-family: Arial, Verdana;
+  font-size: 14px;
+  color: #0465ac;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  margin: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+.accordion_subtitle {
+  font-family: Arial, Verdana;
+  font-size: 12px;
+  color: #999;
+  padding-left: 25px;
+  margin: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.content {
+  position: relative;
+  width: 80%;
+  overflow: visible;
+  overflow: auto;
+}
+.content p {
+  font-family: Arial, Verdana;
+  font-size: 13px;
+  color: #333;
+  padding-left: 25px;
+  margin: 1px;
+  overflow: auto;
+  display: block;
 }
 
 /*# sourceMappingURL=accordion.css.map */

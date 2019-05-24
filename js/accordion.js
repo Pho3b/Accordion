@@ -6,9 +6,9 @@ function Accordion(options){
 	this.fragment = document.createDocumentFragment();						//Instantiating a document fragment
 	this.container = document.getElementById(options.container);
 	this.main_accordion = document.createElement('section');
-	this.main_accordion_text;
-	this.accordion_text;
-	this.accordion_description;
+	this.main_accordion_title;
+	this.accordion_title;
+	this.accordion_subtitle;
 	this.accordion_block;
 	this.accordion_counter = 1;
 	this.accordion_icon;
@@ -16,11 +16,11 @@ function Accordion(options){
 
 	
 	//Appending text of the main panel
-	this.main_accordion_text = document.createElement('p');
+	this.main_accordion_title = document.createElement('p');
 	
-	this.main_accordion.appendChild(this.main_accordion_text);
-	this.main_accordion_text.innerHTML = options.mainTitle;
-	this.main_accordion_text.classList += 'main_text';
+	this.main_accordion.appendChild(this.main_accordion_title);
+	this.main_accordion_title.innerHTML = options.mainTitle;
+	this.main_accordion_title.classList += 'main_text';
 	//Adding the ID for the main panel
 	this.main_accordion.setAttribute('id', 'panel_0');
 	this.main_accordion.className = 'main_accordion';	
@@ -37,27 +37,33 @@ function Accordion(options){
 		for (let option in this.panels) {
 			//Creating node elements for panels
 			this.accordion_block = document.createElement('section');
-			this.accordion_text = document.createElement('p');
-			this.accordion_description = document.createElement('p');
+			this.accordion_title = document.createElement('p');
+			this.accordion_subtitle = document.createElement('p');
 			this.accordion_icon = document.createElement('i');
+			this.content = document.createElement('div');
 			
 			//Setting the inner HTML for panels
-			this.accordion_text.innerHTML = this.panels[option].title;
-			this.accordion_description.innerHTML = this.panels[option].description;
+			this.accordion_title.innerHTML = this.panels[option].title;
+			this.accordion_subtitle.innerHTML = this.panels[option].subtitle;
 			this.accordion_icon.innerHTML = 'expand_more';
+			this.content.innerHTML = this.panels[option].content;
 			
 			//Adding classes and IDs to the panels elements
-			this.accordion_text.className = 'accordion_text';
+			this.accordion_title.className = 'accordion_title';
 			this.accordion_block.setAttribute('id', 'panel_' + this.accordion_counter);
 			this.accordion_block.className = 'accordion';					
 			this.accordion_icon.className = 'material-icons md-26';
+			this.accordion_subtitle.className = 'accordion_subtitle';
+			this.content.className = 'content';
 				
 			
 			
 			
 			//Appending the created elements and building the actual panel block
-			this.accordion_text.appendChild(this.accordion_icon);
-			this.accordion_block.appendChild(this.accordion_text);
+			this.accordion_block.appendChild(this.accordion_icon);
+			this.accordion_block.appendChild(this.accordion_title);
+			this.accordion_block.appendChild(this.accordion_subtitle);	
+			this.accordion_block.appendChild(this.content);
 			//this.container.appendChild(this.accordion_block);
 			
 			//Appending to the fragment 
