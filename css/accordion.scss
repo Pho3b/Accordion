@@ -1,5 +1,5 @@
 
-.main_panel {
+.main_accordion {
 	
 	background-color: #FFFFFF;
 	box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
@@ -15,17 +15,20 @@
 		white-space: nowrap;
 		overflow: hidden;
 	}
-	
 }
 
 
-.panel {
+.accordion {
 	min-height: 50px;
 	max-height: 70px;
 	box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
 	background-color: #FFFFFF;
 	height: 60px;
 	cursor: pointer;
+	&:hover {
+	  background-color: rgba(217, 217, 217,0.1);
+	}
+	
 	
 	p {
 		font-family: Arial, Verdana;
@@ -38,7 +41,15 @@
 		overflow: hidden;
 	}
 	
+	
 	.open {
 		box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
 	}
+	
+	.material-icons {
+		float: right;
+		margin: 0px 25px 0px 25px;
+		color: #0465ac;
+	}
+			
 }
