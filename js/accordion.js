@@ -13,6 +13,7 @@ class Accordion {
 		this.accordion_block;
 		this.accordion_icon;
 		this.content;
+		this.accordion_counter = 1;	//Setting it to 1 to skip the main accordion
 		
 		//Appending text of the main panel
 		this.main_accordion_title = document.createElement('p');
@@ -54,8 +55,8 @@ class Accordion {
 			
 			//Adding classes and IDs to the panels elements
 			this.accordion_title.className = 'accordion_title';
-			this.accordion_block.setAttribute('id', 'panel_' + this.accordion_counter);
-			this.accordion_block.className = 'accordion';					
+			this.accordion_block.className = 'accordion';
+			this.accordion_block.setAttribute('data-counter', this.accordion_counter);			
 			this.accordion_icon.className = 'material-icons md-26';
 			this.accordion_subtitle.className = 'accordion_subtitle';
 			this.content.className = 'content';
@@ -75,6 +76,9 @@ class Accordion {
 			//Appending to the fragment 
 			this.fragment.appendChild(this.accordion_block);
 			
+			//Adding accordion counter
+			this.accordion_counter++
+			
 		}
 	};
 	
@@ -82,13 +86,19 @@ class Accordion {
 	open(){
 		let accordions = this.parentNode.childNodes;
 		let len = accordions.length;
-
+		console.log(accordions);
 		
 		for(let i = 0; i < len; i++) {	
-			if (accordions[i].classList.contains('open'))
+		console.log(i, parseInt(this.getAttribute('data-counter')), this);
+			if (accordions[i].classList.contains('open') && i != parseInt(this.getAttribute('data-counter'))){
+				console.log("Ci sono", i);
 				accordions[i].classList.remove('open');
+			}
+				
 		}
-		this.classList.add('open');
+
+		this.classList.toggle('open');
+		
 	}
 	
 	
