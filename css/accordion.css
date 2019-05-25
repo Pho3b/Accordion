@@ -24,13 +24,13 @@
 .accordion:hover {
   background-color: rgba(217, 217, 217, 0.1);
 }
-.accordion .open {
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
-}
-.accordion .material-icons {
+.accordion.material-icons {
   float: right;
   margin: 0px 25px 0px 25px;
   color: #0465ac;
+}
+.accordion div {
+  display: none;
 }
 
 .accordion_title {
@@ -57,19 +57,23 @@
   font-weight: 500;
 }
 
-.content {
+content {
   position: relative;
   width: 80%;
   overflow: visible;
   overflow: auto;
 }
-.content p {
+content p {
   font-family: Arial, Verdana;
   font-size: 13px;
   color: #333;
   padding-left: 25px;
   margin: 1px;
   overflow: auto;
+  display: block;
+}
+
+.open div {
   display: block;
 }
 

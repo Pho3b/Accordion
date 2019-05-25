@@ -28,20 +28,20 @@
 	  background-color: rgba(217, 217, 217,0.1);
 	}
 	
-	.open {
-		box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
-	}
-	
-	.material-icons {
+	&.material-icons {
 		float: right;
 		margin: 0px 25px 0px 25px;
 		color: #0465ac;
 	}
-			
+	
+	div {
+		display: none;
+	}
+	
 }
 
 
-.accordion_title{
+.accordion_title {
 	font-family: Arial, Verdana;
 	font-size: 14px;
 	color: #0465ac;
@@ -55,7 +55,7 @@
 }
 
 
-.accordion_subtitle{
+.accordion_subtitle {
 	font-family: Arial, Verdana;
 	font-size: 12px;
 	color: #999;
@@ -67,12 +67,12 @@
 }
 
 
-.content{
+content {
 	position: relative;
 	width: 80%;
 	overflow: visible;
 	overflow: auto;
-	
+
 	p {
 		font-family: Arial, Verdana;
 		font-size: 13px;
@@ -83,4 +83,20 @@
 		display: block;
 	
 	}
+}	
+
+.open {
+	div {
+		display: block;
+	}
 }
+
+
+
+
+
+
+
+
+
+
