@@ -7,12 +7,6 @@ class Accordion {
 		this.fragment = document.createDocumentFragment();						//Instantiating a document fragment
 		this.container = document.getElementById(options.container);
 		this.main_accordion = document.createElement('section');
-		this.main_accordion_title;
-		this.accordion_title;
-		this.accordion_subtitle;
-		this.accordion_block;
-		this.accordion_icon;
-		this.content;
 		this.accordion_counter = 1;	//Setting it to 1 to skip the main accordion
 		
 		//Appending text of the main panel
@@ -26,10 +20,9 @@ class Accordion {
 		this.main_accordion.className = 'main_accordion';	
 		//Appending the main panel to the container
 		this.container.appendChild(this.main_accordion);
-		
+
 		this.panels = options.panels;
-		
-		
+
 		//Initializer(Da mettere nel costruttore)
 		this.init();
 	}
@@ -37,7 +30,7 @@ class Accordion {
 
 	
 	//METHODS
-	createPanelsBlock(option) {
+	createPanelsBlock() {
 		
 		for (let option in this.panels) {
 			//Creating node elements for panels
@@ -64,8 +57,8 @@ class Accordion {
 			
 				
 			//Appending the created elements and building the actual panel block
-			this.accordion_block.appendChild(this.accordion_icon);
 			this.accordion_block.appendChild(this.accordion_title);
+            this.accordion_title.appendChild(this.accordion_icon);
 			this.accordion_block.appendChild(this.accordion_subtitle);	
 			this.accordion_block.appendChild(this.content);
 			//this.container.appendChild(this.accordion_block);
@@ -86,10 +79,10 @@ class Accordion {
 	open(){
 		let accordions = this.parentNode.childNodes;
 		let len = accordions.length;
-		console.log(accordions);
+		//console.log(accordions);
 		
 		for(let i = 0; i < len; i++) {	
-		console.log(i, parseInt(this.getAttribute('data-counter')), this);
+		//console.log(i, parseInt(this.getAttribute('data-counter')), this);
 			if (accordions[i].classList.contains('open') && i != parseInt(this.getAttribute('data-counter'))){
 				console.log("Ci sono", i);
 				accordions[i].classList.remove('open');
@@ -101,12 +94,7 @@ class Accordion {
 		
 	}
 	
-	
-	getAccordions() {
-		console.log(this.accordions);
-		return this.accordions;
-	}
-	
+
 	// Initializer
 	init() {
 		this.createPanelsBlock();

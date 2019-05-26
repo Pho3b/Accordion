@@ -1,10 +1,11 @@
 .main_accordion {
   background-color: #FFFFFF;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
   height: 60px;
+  border: 1px solid #e4e6e5;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
 }
 .main_accordion p {
-  font-family: Arial, Verdana;
   font-size: 18px;
   color: #333;
   padding-left: 25px;
@@ -16,38 +17,67 @@
 }
 
 .accordion {
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
   cursor: pointer;
   overflow: auto;
+  border: 1px solid #e4e6e5;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  transition-property: margin;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+  margin: 0 0 0 0;
+  min-height: 70px;
+  max-height: 70px;
 }
-.accordion:hover {
-  background-color: rgba(217, 217, 217, 0.1);
-}
-.accordion.material-icons {
+.accordion .material-icons {
   float: right;
-  margin: 0px 25px 0px 25px;
+  margin: 12px 25px 0 25px;
   color: #0465ac;
 }
-.accordion div {
-  display: none;
+
+.content {
+  background: #fff;
+  overflow: hidden;
+  color: #000;
+  max-height: 0;
+  transition-property: max-height, margin;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0, 1, 0, 1);
+  display: block;
+  margin: 0 0 0 0;
+}
+.content p {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #333;
+  padding-left: 25px;
+  margin: 1px;
+  overflow: auto;
+}
+
+.open {
+  margin: 30px 0px 30px 0px;
+  max-height: 100%;
+}
+.open .content {
+  margin: 25px 0px 25px 0px;
+  max-height: 500px;
+  transition-property: max-height, margin;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
 }
 
 .accordion_title {
-  font-family: Arial, Verdana;
   font-size: 14px;
   color: #0465ac;
-  padding-left: 25px;
-  padding-top: 10px;
-  padding-bottom: 12px;
-  margin: 1px;
+  padding: 10px 0 0 25px;
   white-space: nowrap;
   overflow: hidden;
   font-weight: 600;
 }
 
 .accordion_subtitle {
-  font-family: Arial, Verdana;
   font-size: 12px;
   color: #999;
   padding-left: 25px;
@@ -55,26 +85,6 @@
   white-space: nowrap;
   overflow: hidden;
   font-weight: 500;
-}
-
-content {
-  position: relative;
-  width: 80%;
-  overflow: visible;
-  overflow: auto;
-}
-content p {
-  font-family: Arial, Verdana;
-  font-size: 13px;
-  color: #333;
-  padding-left: 25px;
-  margin: 1px;
-  overflow: auto;
-  display: block;
-}
-
-.open div {
-  display: block;
 }
 
 /*# sourceMappingURL=accordion.css.map */
