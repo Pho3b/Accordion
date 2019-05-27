@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45019032-b5e4-4073-9387-a8ab456cda94" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/accordion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/accordion.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/accordion.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/accordion.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/accordion.js" afterDir="false" />
-    </list>
+    <list default="true" id="45019032-b5e4-4073-9387-a8ab456cda94" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +40,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/accordion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
+            <state relative-caret-position="306">
               <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
@@ -180,12 +171,12 @@
       <option name="presentableId" value="Default" />
       <updated>1558868918427</updated>
       <workItem from="1558868919721" duration="10742000" />
-      <workItem from="1558940165660" duration="16422000" />
+      <workItem from="1558940165660" duration="17022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27164000" />
+    <option name="totallyTimeSpent" value="27764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -247,7 +238,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/accordion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
+        <state relative-caret-position="306">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
