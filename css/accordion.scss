@@ -32,20 +32,25 @@ $open-transition-duration: 0.6s;
 	border: $accordion-border;
 	box-shadow: $accordion-box-shadow;
 	font-family: $font;
-	transition-property: margin;
+	transition-property: max-height, margin;
 	transition-duration: $open-transition-duration;
 	transition-timing-function:  ease-in-out;
 	margin: 0 0 0 0;
-	min-height: 70px; //Da aggiungere la cinquanta per accordion 2
-	max-height: 70px;
 
 	.material-icons {
 		float: right;
-		margin: 12px 25px 0 25px;
+		margin:0 25px 0 25px;
 		color: #0465ac;
 	}
+}
 
 
+.with_subtitle {
+	line-height: 70px;
+}
+
+.no_subtitle {
+	line-height: 50px;
 }
 
 
@@ -54,6 +59,8 @@ $open-transition-duration: 0.6s;
 	overflow: hidden;
 	color: #000;
 	max-height: 0;
+	float: left;
+	width: 95%;
 	transition-property: max-height, margin;
 	transition-duration: $open-transition-duration;
 	transition-timing-function: cubic-bezier(0, 1, 0, 1);
@@ -85,25 +92,42 @@ $open-transition-duration: 0.6s;
 }
 
 
-
 .accordion_title {
 	font-size: 14px;
 	color: #0465ac;
-	padding: 10px 0 0 25px;
+	padding: 10px 0 12px 25px;
 	white-space: nowrap;
 	overflow: hidden;
 	font-weight: 600;
+	margin: 0;
 }
 
 
 .accordion_subtitle {
+	margin: 0;
 	font-size: 12px;
 	color: #999;
-	padding-left: 25px;
-	margin: 1px;
+	padding: 0 0 0 25px;
 	white-space: nowrap;
 	overflow: hidden;
 	font-weight: 500;
+}
+
+
+.column {
+	float: left;
+}
+
+
+.left {
+	width: 90%;
+	padding-top: 5px;
+}
+
+
+.right {
+	//padding-top: 25px;
+	width: 10%;
 }
 
 
