@@ -100,7 +100,7 @@ class Accordion {
 			//Appending the current block to the fragment
 			this.fragment.appendChild(this.accordion_block);
 			
-			//Increasing accordion counter (I set this counter as an attribute of every block, it helps to indentify every single accordion block)
+			//Increasing accordion counter (I set this counter as an attribute of every block, i use it to identify the current accordion in the 'open' method)
 			this.accordion_counter++
 		}
 	};
@@ -136,7 +136,6 @@ class Accordion {
 			this.generateHeaderPanel();
 			this.accordion_counter = 1;
 		}
-
 		this.generatePanelsBlock();
 		this.container.appendChild(this.fragment);
 	}

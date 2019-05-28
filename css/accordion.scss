@@ -26,6 +26,33 @@ $open-font-animation-duration: 0.4s;
 }
 
 
+.accordion_title {
+	font-size: 14px;
+	color: #0465ac;
+	padding: 10px 0 12px 25px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: 600;
+	margin: 0;
+	transition-property: font-size;
+	transition-duration: $open-font-animation-duration;
+	transition-timing-function: ease-in-out;
+}
+
+
+.accordion_subtitle {
+	margin: 0;
+	font-size: 12px;
+	color: #999;
+	padding: 0 0 12px 25px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: 500;
+}
+
+
 .accordion {
 	background-color: #FFFFFF;
 	cursor: pointer;
@@ -44,6 +71,11 @@ $open-font-animation-duration: 0.4s;
 		margin:0 25px 0 25px;
 		color: #0465ac;
 	}
+}
+
+
+.column {
+	float: left;
 }
 
 
@@ -87,7 +119,7 @@ $open-font-animation-duration: 0.4s;
 
 	.content {
 		margin: 25px 0 25px 0;
-		max-height: 500px;
+		max-height: 2560px;
 		transition-property: max-height, margin;
 		transition-duration: $open-transition-duration;
 		transition-timing-function: ease-in-out;
@@ -101,34 +133,6 @@ $open-font-animation-duration: 0.4s;
 }
 
 
-.accordion_title {
-	font-size: 14px;
-	color: #0465ac;
-	padding: 10px 0 12px 25px;
-	white-space: nowrap;
-	overflow: hidden;
-	font-weight: 600;
-	margin: 0;
-	transition-property: font-size;
-	transition-duration: $open-font-animation-duration;
-	transition-timing-function: ease-in-out;
-}
-
-
-.accordion_subtitle {
-	margin: 0;
-	font-size: 12px;
-	color: #999;
-	padding: 0 0 12px 25px;
-	white-space: nowrap;
-	overflow: hidden;
-	font-weight: 500;
-}
-
-
-.column {
-	float: left;
-}
 
 
 
