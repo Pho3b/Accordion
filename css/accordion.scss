@@ -38,6 +38,9 @@ $open-font-animation-duration: 0.4s;
 	transition-property: font-size;
 	transition-duration: $open-font-animation-duration;
 	transition-timing-function: ease-in-out;
+	-moz-transition-property: font-size;
+	-moz-transition-duration:  $open-font-animation-duration;
+	-moz-transition-timing-function: ease-in-out;
 }
 
 
@@ -63,6 +66,9 @@ $open-font-animation-duration: 0.4s;
 	transition-property: max-height, margin;
 	transition-duration: $open-transition-duration;
 	transition-timing-function:  ease-in-out;
+	-moz-transition-property: max-height, margin;
+	-moz-transition-duration:  $open-transition-duration;
+	-moz-transition-timing-function: ease-in-out;
 	margin: 0 0 0 0;
 	max-height: 70px;
 
@@ -99,6 +105,9 @@ $open-font-animation-duration: 0.4s;
 	transition-property: max-height, margin;
 	transition-duration: $open-transition-duration;
 	transition-timing-function: cubic-bezier(0, 1, 0, 1);
+	-moz-transition-property: max-height, margin;
+	-moz-transition-duration:  $open-transition-duration;
+	-moz-transition-timing-function: cubic-bezier(0, 1, 0, 1);
 	display: block;
 	margin: 0 0 0 0;
 
@@ -123,6 +132,9 @@ $open-font-animation-duration: 0.4s;
 		transition-property: max-height, margin;
 		transition-duration: $open-transition-duration;
 		transition-timing-function: ease-in-out;
+		-moz-transition-property: max-height, margin;
+		-moz-transition-duration:  $open-transition-duration;
+		-moz-transition-timing-function: ease-in-out;
 	}
 
 	.accordion_title {
