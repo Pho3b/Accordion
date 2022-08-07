@@ -1,9 +1,8 @@
 $accordion-border: 1px solid #e4e6e5;
 $accordion-box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
 $font : Arial, sans-serif;
-$open-transition-duration: 0.6s;
-$open-font-animation-duration: 0.4s;
-
+$open-transition-duration: 0.2s;
+$open-font-animation-duration: 0.2s;
 
 
 .main_accordion {
@@ -25,7 +24,6 @@ $open-font-animation-duration: 0.4s;
 	}
 }
 
-
 .accordion_title {
 	font-size: 14px;
 	color: #0465ac;
@@ -43,7 +41,6 @@ $open-font-animation-duration: 0.4s;
 	-moz-transition-timing-function: ease-in-out;
 }
 
-
 .accordion_subtitle {
 	margin: 0;
 	font-size: 12px;
@@ -54,7 +51,6 @@ $open-font-animation-duration: 0.4s;
 	overflow: hidden;
 	font-weight: 500;
 }
-
 
 .accordion {
 	background-color: #FFFFFF;
@@ -79,21 +75,17 @@ $open-font-animation-duration: 0.4s;
 	}
 }
 
-
 .column {
 	float: left;
 }
-
 
 .with_subtitle {
 	line-height: 70px;
 }
 
-
 .no_subtitle {
 	line-height: 50px;
 }
-
 
 .content {
 	background: #fff;
@@ -121,7 +113,6 @@ $open-font-animation-duration: 0.4s;
 	}
 }
 
-
 .open {
 	margin: 30px 0 30px 0;
 	max-height: 100%;
@@ -141,31 +132,4 @@ $open-font-animation-duration: 0.4s;
 		font-size: 18px;
 		padding-top: 12px;
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
