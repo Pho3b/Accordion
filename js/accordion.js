@@ -1,7 +1,7 @@
 "use strict";
 
 class Accordion {
-	
+
 	/**
 	 * Constructor with given options object
 	 * 
@@ -109,7 +109,7 @@ class Accordion {
 		for (let i = 0; i < accordions.length; i++) {
 			if (accordions[i].classList.contains('open') && i !== parseInt(this.getAttribute('data-counter'))) {
 				accordions[i].classList.remove('open');
-				accordions[i].childNodes[1].childNodes[0].innerHTML = 'expand_more';
+				accordionBody = 'expand_more';
 			}
 		}
 
